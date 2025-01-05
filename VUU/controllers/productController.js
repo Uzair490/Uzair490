@@ -321,8 +321,7 @@ export const productCategoryController = async (req, res) => {
   }
 };
 
-//payment gateway api
-//token
+
 export const braintreeTokenController = async (req, res) => {
   try {
     gateway.clientToken.generate({}, function (err, response) {
@@ -337,7 +336,7 @@ export const braintreeTokenController = async (req, res) => {
   }
 };
 
-//payment
+
 export const brainTreePaymentController = async (req, res) => {
   try {
     const { nonce, cart } = req.body;
